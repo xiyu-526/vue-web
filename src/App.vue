@@ -23,7 +23,7 @@ export default {
 
   },
   mounted() {
-    axios.get('http://192.168.140.178:3000/api').then((resp) => {
+    axios.get('http://47.114.159.9:3000/api').then((resp) => {
       this.user = resp.data;
     }, (err) => {
       alert(err);
