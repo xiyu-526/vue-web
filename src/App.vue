@@ -25,9 +25,6 @@ export default {
     }, (err) => {
       alert(err);
     })
-  },
-  methods: {
-
   }
 }
 </script>
