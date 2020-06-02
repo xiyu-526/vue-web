@@ -13,7 +13,18 @@ export default {
   components: { },
   data() {
     return {
-      user: []
+      user: [
+        {
+          id: 1,
+          name: '阿斗'
+        }, {
+          id: 2,
+          name: '玄策'
+        }, {
+          id: 3,
+          name: '大乔'
+        }
+      ]
     }
   },
   computed: {
