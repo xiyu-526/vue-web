@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 export default {
   components: { },
   data() {
@@ -28,11 +28,11 @@ export default {
     }
   },
   mounted() {
-    // axios.get('/api').then((resp) => {
-    //   this.user = resp.data;
-    // }, (err) => {
-    //   alert(err);
-    // })
+    axios.get('/api').then((resp) => {
+      this.user = resp.data;
+    }, (err) => {
+      alert(err);
+    })
   }
 }
 </script>
