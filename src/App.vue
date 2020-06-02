@@ -28,12 +28,11 @@ export default {
     }
   },
   mounted() {
-    axios.get('/api').then((resp) => {
-      console.log(resp);
-      this.user = resp.data;
-    }, (err) => {
-      alert(err);
-    })
+    // axios.get('/api').then((resp) => {
+    //   this.user = resp.data;
+    // }, (err) => {
+    //   alert(err);
+    // })
   }
 }
 </script>
