@@ -27,11 +27,9 @@ export default {
       ]
     }
   },
-  computed: {
-
-  },
   mounted() {
-    axios.get('http://47.114.159.9:3000/api').then((resp) => {
+    axios.get('http://121.196.28.40:3000/api').then((resp) => {
+      console.log(resp)
       this.user = resp.data;
     }, (err) => {
       alert(err);
