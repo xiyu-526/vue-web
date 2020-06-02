@@ -28,7 +28,7 @@ export default {
     }
   },
   mounted() {
-    axios.get('/api').then((resp) => {
+    axios.get('http://121.196.28.40:3000/api').then((resp) => {
       this.user = resp.data;
     }, (err) => {
       alert(err);
