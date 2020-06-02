@@ -34,7 +34,7 @@ export default {
       alert(err);
     })
 
-    axios.get('/act/baoku/api/api.php?c=index&a=userinfo').then((resp) => {
+    axios.get('/api/act/baoku/api/api.php?c=index&a=userinfo').then((resp) => {
       this.user = resp.data;
     }, (err) => {
       alert(err);
