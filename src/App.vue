@@ -28,8 +28,8 @@ export default {
     }
   },
   mounted() {
-    axios.get('http://121.196.28.40:3000/api').then((resp) => {
-      console.log(resp)
+    axios.get('/api').then((resp) => {
+      console.log(resp);
       this.user = resp.data;
     }, (err) => {
       alert(err);
