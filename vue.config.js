@@ -28,11 +28,11 @@ module.exports = {
       })
   },
   devServer: {
-    // proxy: {
-    //   '/api/*': {
-    //     target: 'http://121.196.28.40:3000/',
-    //     changeOrigin: 'true'
-    //   }
-    // }
+    proxy: {
+      '/api/*': {
+        target: 'http://zt2.ztgame.com/',
+        changeOrigin: 'true'
+      }
+    }
   }
 }
