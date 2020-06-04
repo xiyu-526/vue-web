@@ -24,8 +24,11 @@ export default {
           id: 3,
           name: '大乔'
         }, {
-          id: 3,
+          id: 4,
           name: '小乔'
+        }, {
+          id: 5,
+          name: '张飞'
         }
       ]
     }
