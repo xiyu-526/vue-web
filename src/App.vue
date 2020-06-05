@@ -5,6 +5,12 @@
         {{ item.id }}： {{ item.name }}
       </li>
     </ul>
+    远程获取：
+    <ul>
+      <li v-for="item in user" :key="item.id">
+        {{ item.id }}： {{ item.name }}
+      </li>
+    </ul>
   </div>
 </template>
 <script>
@@ -30,7 +36,8 @@ export default {
           id: 5,
           name: '张飞'
         }
-      ]
+      ],
+      user2: []
     }
   },
   mounted() {
@@ -41,7 +48,7 @@ export default {
     })
 
     axios.get('/api/act/baoku/api/api.php?c=index&a=userinfo').then((resp) => {
-      this.user = resp.data;
+      this.user2 = resp.data;
     }, (err) => {
       alert(err);
     })
