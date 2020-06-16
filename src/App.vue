@@ -22,19 +22,19 @@ export default {
       user: [
         {
           id: 1,
-          name: '阿斗'
+          name: '阿斗1'
         }, {
           id: 2,
-          name: '玄策'
+          name: '玄策2'
         }, {
           id: 3,
-          name: '大乔'
+          name: '大乔3'
         }, {
           id: 4,
-          name: '小乔'
+          name: '小乔4'
         }, {
           id: 5,
-          name: '张飞'
+          name: '张飞5'
         }
       ],
       user2: []
